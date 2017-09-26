@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="@dimen/button_vertical_outer_margin"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginLeft="@dimen/button_vertical_inner_half_margin"
+        android:layout_marginRight="@dimen/button_vertical_inner_half_margin"
+        android:layout_centerVertical="true"
+        android:background="@android:color/darker_gray"/>
+
+
+    <TextView
+        android:id="@+id/cuisine_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/button_vertical_inner_margin"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:paddingRight="@dimen/button_vertical_outer_margin"
+        android:paddingLeft="@dimen/button_vertical_outer_margin"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_weight="1"
+        android:text="teswfadgfsgfdgfst"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+
+
+
+</RelativeLayout>

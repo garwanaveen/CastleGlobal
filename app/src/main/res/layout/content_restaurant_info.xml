@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_overlay"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.castleglobal.assignment.RestaurantInfo"
+    tools:showIn="@layout/activity_restaurant_info">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- A CardView that contains a TextView -->
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/button_vertical_outer_margin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="true"
+                        android:stepSize="0.1"
+                        android:numStars="5"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:layout_marginRight="@dimen/button_vertical_inner_margin"
+                        android:layout_weight="1">
+                    </RatingBar>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/votes"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/button_vertical_inner_margin"
+                        android:text="560 votrd"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/cost_for_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:maxLines="4"
+                    android:lines="4"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/button_vertical_inner_margin"
+                    android:textSize="16sp"
+                    android:ellipsize="end"
+                    android:text="Cuisis:"/>
+            </LinearLayout>
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_marginRight="80dp"-->
+                <!--android:layout_marginLeft="80dp"-->
+                <!--android:background="@android:color/darker_gray"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/button_vertical_outer_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Cuisines : "/>
+
+
+                <TextView
+                    android:id="@+id/cuisines"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="@dimen/button_vertical_inner_margin"
+                    android:ellipsize="end"
+                    android:text="Cuisislkamdlkamf lkafmlak elkfakjsfnkjadfmlkwlksamlnes :"/>
+            </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/button_vertical_inner_margin"
+                        android:layout_margin="@dimen/button_vertical_outer_margin"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:text="Location : "/>
+
+
+                        <TextView
+                            android:id="@+id/location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+                            android:textSize="18sp"
+                            android:ellipsize="end"
+                            android:layout_marginLeft="@dimen/button_vertical_inner_margin"
+                            android:text="Cuisislkamdlkamf lkafmlak elkfakjsfnkjadfmlkwlksamlnes :"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/button_vertical_outer_margin">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:text="Online table booking : "/>
+
+
+                        <TextView
+                            android:id="@+id/online_table_booking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="@dimen/button_vertical_inner_margin"
+                            android:ellipsize="end"
+                            android:text="Not available"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/button_vertical_outer_margin">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:text="Online order booking : "/>
+
+
+                        <TextView
+                            android:id="@+id/online_order_booking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="@dimen/button_vertical_inner_margin"
+                            android:ellipsize="end"
+                            android:text="Not available"/>
+                    </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/button_vertical_inner_margin">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Menu"
+                        android:id="@+id/menu"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:background="@drawable/rippl_transparent"/>
+
+                    <!--<View-->
+                        <!--android:layout_width="1dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginLeft="@dimen/button_vertical_inner_half_margin"-->
+                        <!--android:layout_marginRight="@dimen/button_vertical_inner_half_margin"-->
+                        <!--android:background="@android:color/darker_gray"/>-->
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Photos"
+                        android:id="@+id/photos"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:background="@drawable/rippl_transparent"/>
+                    <!--<View-->
+                        <!--android:layout_width="1dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginLeft="@dimen/button_vertical_inner_half_margin"-->
+                        <!--android:layout_marginRight="@dimen/button_vertical_inner_half_margin"-->
+                        <!--android:background="@android:color/darker_gray"/>-->
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mark Fav"
+                        android:id="@+id/mark_fav"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:background="@drawable/rippl_transparent"/>
+
+                   </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
